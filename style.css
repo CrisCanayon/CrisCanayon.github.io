@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top-style: solid;
+  border-top-width: medium;
+  border-top-color: purple;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: gray;
+}
+
+nav a {
+  color: gray;
+  font-family: inherit;
+  border: auto;
+  text-decoration: none;
+  padding: 12px 50px;
+}
+
+nav a:hover,
+a:visited {
+  color: purple;
+}
+
+img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-position: 85%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  flex: 30%;
+  order: 1;
+  padding: 16px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  text-align: center;
+  height: 650px;
+}
+
+.right {
+  flex: 70%;
+  order: 2;
+  padding: 20px;
+  max-width: fit-content;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.skills {
+  flex: inherit;
+  order: inherit;
+  max-width: max-content;
+  padding-right: 1000px;
+}
+
+.skillList {
+  font-size: 24px;
+  width: 600%;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+}
+
+progress {
+  width: 100%;
+}
+
+.facts {
+  display: flex;
+}
+
+.checkboxList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.education,
+.experience,
+.interests {
+  width: 1125px;
+  max-width: fit-content;
+}
+
+.credentials {
+  width: 750px;
+  display: flex;
+}
+
+.credentialsLeft {
+  flex: 1;
+  order: 1;
+  align-items: flex-start;
+}
+
+.credentialsRight {
+  flex: 1;
+  order: 2;
+  text-align: right;
+  align-items: flex-start;
+}
+
+.interestList {
+  font-size: 24px;
+}
+
+p.name {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+p.occupation {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+p.title {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+p.credTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a.email {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    border-right: 0px;
+    border-bottom: 1px #ccc solid;
+  }
+}
