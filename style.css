@@ -43,8 +43,7 @@ img {
   flex: 30%;
   order: 1;
   padding: 16px;
-  border-right-style: solid;
-  border-right-width: 1px;
+  border-right: 1px #ccc solid;
   text-align: center;
   height: 650px;
 }
@@ -53,7 +52,6 @@ img {
   flex: 70%;
   order: 2;
   padding: 20px;
-  max-width: fit-content;
 }
 
 table {
@@ -149,14 +147,14 @@ footer {
   bottom: 0;
 }
 
-@media only screen and (max-width: 1000px) {
-  .content {
+@media only screen and (max-width: 800px) {
+  .row {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .about {
+  .left {
     border-right: 0px;
     border-bottom: 1px #ccc solid;
   }
